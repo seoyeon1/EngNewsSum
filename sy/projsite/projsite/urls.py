@@ -19,5 +19,5 @@ import extract.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', extract.views.home, name='home'),
+    path('', extract.views.base, name='base'),
 ]

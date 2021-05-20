@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -117,6 +117,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+STATICFILES_DIRS = [ 
+    os.path.join(BASE_DIR, 'extract', 'static')#static 파일들이 들어있는 경로
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')# static파일을 한곳에 모으는데, 그때 파일을 모아줄 위치
 
 STATIC_URL = '/static/'
 
