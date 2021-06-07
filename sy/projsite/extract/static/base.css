@@ -330,7 +330,7 @@ display:none !important;
   }
 
   
-  textarea {
+  .text {
     position: absolute;
     top: 6rem;
     left: 4rem;
@@ -401,6 +401,7 @@ display:none !important;
     position: absolute;
     top: 0;
   }
+
   .paper:before {
     height: 100%;
     width: 2px;
@@ -417,7 +418,7 @@ display:none !important;
   }
 
   
-  textarea {
+  .text {
     position: absolute;
     top: 6rem;
     left: 4rem;

@@ -15,7 +15,7 @@
         <!-- 헤더 영역 -->
 
         <header class="header cfixed">
-            <h1 class="logo"><a href="">BeViBig's Text Extract</a></h1>
+            <h1 class="logo"><a href="{% url 'base' %}">BeViBig's Text Extract</a></h1>
             <nav>
                 <ul class="gnb">
                     <li style="font-weight: bold;"><a href="#summary">summary</a></li>
@@ -32,23 +32,12 @@
         </header>
 
 
-
-
-
-
-
-
-
-
-
-
         <!-- Welcome 부분 -->
 
         <section class="about-section">
             <div class="container">
                 <h2 class="title-tag">Welcome</h2>
                 <p class="info" style="padding-bottom: 10px; font-style: italic; font-size: large; font-weight: bold;">
-                    
                     BeViBig's Text Extract summarizes text to save you time.<br>
                     Paste an article, text or essay in this box and hit summarize. we'll return a shortened copy for you to read.<br>
                             
@@ -56,17 +45,18 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
         <hr class="separator separator--line">
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- summary 부분 -->
         <section class="about-section" id="summary">
@@ -95,66 +85,40 @@ Paste an article, text or essay in this box and hit summarize. we'll return a sh
 
 
 
-                <!-- 입력을 받는 노트 -->
-
-
-
-                <!-- 노트들의 감싸는 div wrapper -->
 
                 <div class= "paper-wrapper" style="display: flex; justify-content: center; flex-basis: 50%;">
 
                     
                     <div class="paper" style="margin-right: 10%;">
-                        
-
-                        <!-- 입력된 로그인 데이터를 보낼 서버 페이지의 주소를 입력 -->
-                        <form action="{% url 'result' %}" method="get">
-
-
-                            <textarea class="text" name="original-text" placeholder="This service summarizes text to save you time.
-
-[STEP]
-
-1. Paste an article, text or essay in this box
-2. Click! to summarize
-3. We'll return a shortened copy for you to read.."></textarea>
+                        <textarea class="text">{{origins}}</textarea>
                         
                     </div>
                     
-
-
-
-                    <!-- 결과 보여줄 노트 -->
-                    <div class="paper"></div>
-
+                    
+                    <div class="paper">
+                        <textarea class="text">{{origins}}</textarea>
+                        
+                    </div>
                 </div>
 
-
-
-        <!-- 제출 버튼 -->
+        <!-- 제출 버튼들 -->
 
             <div class= "paper-wrapper" style="display: flex; justify-content: space-around; flex-basis: 50%; padding: 10px 0;">
-            
-                <button type="submit">Click!</button>
-                
+
+                <button><a href="{% url 'base' %}">restart</a></button> <!-- base로 가려고 하는데 왜 빨간불이 뜨는지 모르겠음 -->
+                <!-- 생성된 요약문을 바로 파파고로 번역하기 -->
+                <!-- 버튼 색을 연두색으로 수정하기 -->
+                <!-- '나 "  처리를 어떻게 해야할지 모르겠음, 요약문에 엔터가 있으면 이것도 인식 못함.(1줄로 쭉 나와야 파파고로 연결 가능)
+                    이거 둘 중 하나가 요약문에 있으면 안넘어가짐, 요약문에서 ""이 제거되고 나오려나? 안되면 그냥 파파고로 가는 링크로 변경하자-->
+
+                <!-- direct로 넘어가기 -->
+                <!-- <button onclick='location.href="https://papago.naver.com/?sk=auto&tk=ko&hn=0&st="+"{{origins}}"'>Papago</button> -->
+                <!-- 새 창에서 열기 -->
+                <button onclick='window.open("https://papago.naver.com/?sk=auto&tk=ko&hn=0&st="+"{{origins}}") '>Papago</button>
             </div>
-
-        </form>
-
-
             </div>
             
         </section>
-
-
-
-
-
-
-
-
-
-
 
         <hr class="separator separator--line">
 
@@ -190,16 +154,6 @@ Paste an article, text or essay in this box and hit summarize. we'll return a sh
             </p>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
 
         <hr class="separator separator--line">
 

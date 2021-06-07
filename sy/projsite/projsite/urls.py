@@ -20,4 +20,5 @@ import extract.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', extract.views.base, name='base'),
+    path('result/', extract.views.result, name='result'),
 ]
