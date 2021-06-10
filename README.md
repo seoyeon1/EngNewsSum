@@ -85,10 +85,10 @@
 "Papago" 버튼을 누르면 url 쿼리에 요약결과가 함께 전달되어 요약문에 대한 번역을 바로 확인할 수 있다.
 
 
-![Screenshot 2021-06-10 at 23 38 21](https://user-images.githubusercontent.com/30707885/121567920-1437ca00-ca5a-11eb-8356-ba035c54a41b.jpg)
+![tra](https://user-images.githubusercontent.com/30707885/121601900-840d7b00-ca81-11eb-83ac-b4548466e57e.jpg)
 
 
-![Screenshot 2021-06-10 at 23 50 32](https://user-images.githubusercontent.com/30707885/121567940-18fc7e00-ca5a-11eb-8840-0d08e0331746.jpg)
+![Screenshot 2021-06-11 at 06 41 41](https://user-images.githubusercontent.com/30707885/121601934-8ec81000-ca81-11eb-98c1-171f284cb6d8.jpg)
 
 
 
@@ -237,7 +237,7 @@
 
 ### 7. Web
 
-- html, css를 사용해 기본 틀을 마련(base, result.html)
+- html, css를 사용해 반응형 기본 틀을 마련(base, result.html)
 - Flask로 요약 Model을 웹에 배포(app.py), 이를 통해 사용자의 입력에 따른 요약문을 생성할 예정
 
 ![w그림1](https://user-images.githubusercontent.com/30707885/121587922-46ecbd00-ca70-11eb-93d3-090ef7563b90.png)
