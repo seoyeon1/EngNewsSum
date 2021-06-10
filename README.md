@@ -16,7 +16,7 @@
 
 나날이 직구를 찾는 사람들이 늘어나고 그들 중 다수의 사람들이 미국(아마존, 아이허브, 이베이)등을 이용해오고 있음을 확인할 수 있다.<br>그래서 우리는 소비자가 해외 웹사이트에서 직접 구매할 때 맞닥뜨리는 언어장벽의 어려움을 낮춰주고자 영문리뷰요약 모델을 개발하기로 결정했다.
 
-
+![G3](https://user-images.githubusercontent.com/30707885/121585106-2a9b5100-ca6d-11eb-863e-0234b7122aa7.jpg) ![G2](https://user-images.githubusercontent.com/30707885/121585140-3424b900-ca6d-11eb-96dc-72ebebd738a4.jpg) ![G1](https://user-images.githubusercontent.com/30707885/121585158-39820380-ca6d-11eb-9438-63355aa51092.jpg)
 
 
 ## 기대효과
@@ -164,6 +164,7 @@
 
 **전처리를 거친 후 데이터의 개수 : 393224**
 
+![pre](https://user-images.githubusercontent.com/30707885/121585061-1eaf8f00-ca6d-11eb-9978-c97c8265c202.jpg)
 
 
 ### 2. EDA
@@ -190,7 +191,7 @@
 
 ### 3. Split Data & Additional Processing
 
-![그림4](https://user-images.githubusercontent.com/30707885/121568078-3df0f100-ca5a-11eb-91d0-3c7a4668d4c8.jpg)
+![그림4](https://user-images.githubusercontent.com/30707885/121568078-3df0f100-ca5a-11eb-91d0-3c7a4668d4c8.jpg) ![pr](https://user-images.githubusercontent.com/30707885/121585086-240cd980-ca6d-11eb-95bf-1b5f0ddf7b39.jpg)
 
 
 **8 : 2 비율로 훈련 데이터와 테스트 데이터 분리** 
@@ -232,13 +233,18 @@
 |원문|I have a brushed dewalt torque wrench and i didn't have a driver so i bought this. This is an amazing driver but what you don't know that this unscrewed my car lug nuts without issues! Further more it's brush less so there were no sparks going off while doing it!|love this stuff|
 |번역|필요로 했던 물건이 없어서 대신 이 물건을 샀는데 이게 문제없이 내가 하고자 하는 일을 해냈다는 건 여러분이 모를 거예요! 게다가 브러쉬가 적어서 일을 하는 동안 불꽃이 튀지도 않았다구요!|이 물건이 좋아요|
 
+### 7. Web
+
+- html, css를 사용해 기본 틀을 마련
+- Flask로 요약 Model을 웹에 배포(app.py), 이를 통해 사용자의 입력에 따른 요약문을 생성할 예정
+
+
 
 ---------
 
 ## Good Case / Bad Case
 
 ![case](https://user-images.githubusercontent.com/30707885/121567884-0a15cb80-ca5a-11eb-8ff5-213ab95ec665.PNG)
-
 
 
 
