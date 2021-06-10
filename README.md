@@ -233,11 +233,14 @@
 |원문|I have a brushed dewalt torque wrench and i didn't have a driver so i bought this. This is an amazing driver but what you don't know that this unscrewed my car lug nuts without issues! Further more it's brush less so there were no sparks going off while doing it!|love this stuff|
 |번역|필요로 했던 물건이 없어서 대신 이 물건을 샀는데 이게 문제없이 내가 하고자 하는 일을 해냈다는 건 여러분이 모를 거예요! 게다가 브러쉬가 적어서 일을 하는 동안 불꽃이 튀지도 않았다구요!|이 물건이 좋아요|
 
+---------
+
 ### 7. Web
 
-- html, css를 사용해 기본 틀을 마련
+- html, css를 사용해 기본 틀을 마련(base, result.html)
 - Flask로 요약 Model을 웹에 배포(app.py), 이를 통해 사용자의 입력에 따른 요약문을 생성할 예정
 
+![w그림1](https://user-images.githubusercontent.com/30707885/121587922-46ecbd00-ca70-11eb-93d3-090ef7563b90.png)
 
 
 ---------
