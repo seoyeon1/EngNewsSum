@@ -29,9 +29,9 @@
 ## 팀원 소개
 
 
-|마서연|안재명|윤영준|엽옥영|
-|---|---|---|---|
-|웹 페이지 제작, 전처리, 개발 보조|메인 개발,모델 제작|문서 정리,발표 자료 제작,전처리,개발 보조|개발 보조|
+|마서연(팀장)|안재명|윤영준|엽옥영|
+|------|------|------|------|
+|웹 페이지 제작<br>전처리<br>개발 보조|메인 개발<br>모델 제작|문서 정리<br>발표 자료 제작<br>전처리<br>개발 보조|개발 보조|
 
 -------
 
@@ -39,7 +39,7 @@
 
 
 | 기간 | 작업 | 설명 |
-|---|---|---|
+|-------|------|---------|
 | a | 아이디어 회의 | 시각 장애인을 위한 서비스를 개발하기로 결정 |
 | f | 아이디어 변경 | 점자번역 > 손톱을 통한 건강체크 > 텍스트 요약 |
 | k | 데이터 수집, 기존 서비스 분석 | Amazon review data, BBC data 등을 수집 |
@@ -83,10 +83,10 @@
 "Papago" 버튼을 누르면 url 쿼리에 요약결과가 함께 전달되어 요약문에 대한 번역을 바로 확인할 수 있다.
 
 
-![Screenshot 2021-06-10 at 23.38.21.jpg]({{site.baseurl}}/Screenshot 2021-06-10 at 23.38.21.jpg)
+![Screenshot 2021-06-10 at 23 38 21](https://user-images.githubusercontent.com/30707885/121567920-1437ca00-ca5a-11eb-8356-ba035c54a41b.jpg)
 
 
-![Screenshot 2021-06-10 at 23.50.32.jpg]({{site.baseurl}}/Screenshot 2021-06-10 at 23.50.32.jpg)
+![Screenshot 2021-06-10 at 23 50 32](https://user-images.githubusercontent.com/30707885/121567940-18fc7e00-ca5a-11eb-8840-0d08e0331746.jpg)
 
 
 
@@ -108,7 +108,7 @@
 
 - **Modeling(Seq2seq + Attention)**
 
-![md.PNG]({{site.baseurl}}/md.PNG)
+![md](https://user-images.githubusercontent.com/30707885/121567904-0eda7f80-ca5a-11eb-8bbe-ec1bc2734984.PNG)
 
 
 **인코더** : 입력 문장의 단어 토큰화를 통해 쪼갠 후 각각 RNN 셀에 입력
@@ -134,7 +134,8 @@
 ## 전체적인 흐름
 
 
-![p.PNG]({{site.baseurl}}/p.PNG)
+
+![p](https://user-images.githubusercontent.com/30707885/121567864-02eebd80-ca5a-11eb-86e0-8a76a953610b.PNG)
 
 -------
 
@@ -168,11 +169,13 @@ Html 태그 제거
 - 요약된 문장의 분포도 / 리뷰 텍스트의 분포도
 
 
-## 여기에 그래프들 넣을 거임
+![그림1](https://user-images.githubusercontent.com/30707885/121568047-34678900-ca5a-11eb-87ae-44ecb36acd51.png) | ![그림2](https://user-images.githubusercontent.com/30707885/121568026-30d40200-ca5a-11eb-92be-d367dadd2345.png)
+
+![그림3](https://user-images.githubusercontent.com/30707885/121568010-2c0f4e00-ca5a-11eb-8476-f90d059cafb6.png)
 
 
 |-|최대 길이|평균 길이|
-|------|------|------|
+|---|------|------|
 |원문|1919| 38|
 |요약문|28|3|
 
@@ -189,7 +192,7 @@ Html 태그 제거
 
 ### 3. Split Data & Additional Processing
 
-#### 그림 넣을 거임
+![그림4](https://user-images.githubusercontent.com/30707885/121568078-3df0f100-ca5a-11eb-91d0-3c7a4668d4c8.jpg)
 
 
 8 : 2 비율로 훈련 데이터와 테스트 데이터 분리 
@@ -205,15 +208,12 @@ Html 태그 제거
 
 ### 4. Modeling
 
-#### 사진을 넣을까말까
+![그림6](https://user-images.githubusercontent.com/30707885/121568065-39c4d380-ca5a-11eb-99f3-108f1faa07a1.jpg)
 
-Batch_size = 256
-
-
-Epochs = 30
+Batch_size = 256, Epochs = 30
 
 
-#### 모델 구조사진
+
 
 #### 5. Train&Vaild
 
@@ -233,7 +233,7 @@ Epochs = 30
 - 사용자로부터 입력을 받아 테스트해 본 결과
 
 |-|테스트 문장|결과|
-|------|-------------|------|
+|------|-----------|------|
 |원문|I have a brushed dewalt torque wrench and i didn't have a driver so i bought this. This is an amazing driver but what you don't know that this unscrewed my car lug nuts without issues! Further more it's brush less so there were no sparks going off while doing it!|love this stuff|
 |번역|필요로 했던 물건이 없어서 대신 이 물건을 샀는데 이게 문제없이 내가 하고자 하는 일을 해냈다는 건 여러분이 모를 거예요! 게다가 브러쉬가 적어서 일을 하는 동안 불꽃이 튀지도 않았다구요!|이 물건이 좋아요|
 
@@ -242,4 +242,8 @@ Epochs = 30
 
 ## Good Case / Bad Case
 
-![case.PNG]({{site.baseurl}}/case.PNG)
+![case](https://user-images.githubusercontent.com/30707885/121567884-0a15cb80-ca5a-11eb-8ff5-213ab95ec665.PNG)
+
+
+
+
