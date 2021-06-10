@@ -15,19 +15,14 @@
         <!-- 헤더 영역 -->
 
         <header class="header cfixed">
-            <h1 class="logo"><a href="./base.html">BeViBig's Text Extract</a></h1>
+            <h1 class="logo"><a href="{{ url_for('base') }}">BeViBig's Text Extract</a></h1>
             <nav>
                 <ul class="gnb">
                     <li style="font-weight: bold;"><a href="#summary">summary</a></li>
                     <li style="font-weight: bold;"><a href="#about">about</a></li>
                 </ul>
             </nav>
-            <!-- 토글기능 구현예정 : 삭제할 예정-->
-            <span class="menu-toggle-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
+            
 
         </header>
 
@@ -39,7 +34,7 @@
                 <h2 class="title-tag">Welcome</h2>
                 <p class="info" style="padding-bottom: 10px; font-style: italic; font-size: large; font-weight: bold;">
                     BeViBig's Text Extract summarizes text to save you time.<br>
-                    Paste an article, text or essay in this box and hit summarize. we'll return a shortened copy for you to read.<br>
+                    Paste the product review on the foreign page into this box and "click!" to summarize. We'll return a shortcut for you.<br>
                             
             </p>
             </div>
@@ -64,8 +59,7 @@
                 <h2 class="title-tag">Summarizing</h2>
                 <p class="info" style="padding-bottom: 10px; font-style: italic; font-size: large; font-weight: bold;">
 [STEP]<br>
-BeViBig's Text Extract summarizes text to save you time.<br>
-Paste an article, text or essay in this box and hit summarize. we'll return a shortened copy for you to read.<br>         
+Paste an product review on the foreign page into this box and "click!" to summarize. We'll return a shortcut for you.<br>        
             </p>
             </div>
         </section>
@@ -108,9 +102,6 @@ Paste an article, text or essay in this box and hit summarize. we'll return a sh
                 <button><a href="{{ url_for('base') }}">restart</a></button>
 
                 
-                <!-- 버튼 색을 연두색으로 수정하기 -->
-                <!-- '나 "  처리를 어떻게 해야할지 모르겠음, 요약문에 엔터가 있으면 이것도 인식 못함.(1줄로 쭉 나와야 파파고로 연결 가능)
-                    이거 둘 중 하나가 요약문에 있으면 안넘어가짐, 요약문에서 ""이 제거되고 나오려나? 안되면 그냥 파파고로 가는 링크로 변경하자-->
                 
                 
                 <!-- 생성된 요약문을 바로 파파고로 번역하기 -->
@@ -132,28 +123,37 @@ Paste an article, text or essay in this box and hit summarize. we'll return a sh
             <div class="container">
                 <h2 class="title-tag">About Us</h2>
                 <p class="info">
-                    BeViBig's Text Extract was created to summarize articles and text.<br>
-                    BeViBig's Text Extract's mission is to provide an efficient manner of understanding text, which is done primarily by reducing the text to only the most important sentences.<br>
+                    BeViBig's Text Extract was created to summarize an product review.<br>
+                    Recently, many people buy things online, but reviews on overseas websites such as Amazon are mostly from foreigners. <br>
+                    Therefore, it is difficult to obtain various information about the product from the perspective of purchasing overseas products. <br>
+                    <ins><b>So we will only derive key information through the summary of English reviews, making it easier for people to enjoy shopping on overseas websites.</b></ins><br>
                     <br>
-                    <ins><b>The contents below are intended for testing. </b></ins><br><br>
+                    <br>
 
-                    BeViBig's Text Extract accomplishes its mission by:
+                    <ins><b>BeViBig's Text Extract accomplishes its mission by:</ins></b>
+                    <br><br>
+                    • 10 preprocessing processes.<br>
+                    • Generate a summary using abstract summarization techniques.<br>
+                    • Generate a summary by weighting it according to the frequency of the words.<br>
+                    • Using Model(seq2seq + Attention) <br>
+                    
                     <br>
-                    • Ranking sentences by importance using the core algorithm.<br>
-                    • Reorganizing the summary to focus on a topic; by selection of a keyword.<br>
-                    • Removing transition phrases.<br>
-                    • Removing unnecessary clauses.<br>
-                    • Removing excessive examples.<br>
                     <br>
-                    The core algorithm summarizes in 7 simple steps:<br>
                     <br>
-                    1) Associate words with their grammatical counterparts. (e.g. "city" and "cities")<br>
-                    2) Calculate the occurrence of each word in the text.<br>
-                    3) Assign each word with points depending on their popularity.<br>
-                    4) Detect which periods represent the end of a sentence. (e.g "Mr." does not).<br>
-                    5) Split up the text into individual sentences.<br>
-                    6) Rank sentences by the sum of their words' points.<br>
-                    7) Return X of the most highly ranked sentences in chronological order.<br>
+                    <br>
+                    BeViBig의 Text Extract는 제품 리뷰를 요약하기 위해 작성되었습니다.<br>
+                    최근 많은 사람들이 온라인에서 물건을 구입하지만 아마존과 같은 해외 웹사이트의 리뷰는 대부분 외국인들로부터 작성된 것입니다.<br>
+                    그렇기에 해외 제품을 구매하는 입장에서는 상품의 다양한 정보를 얻기 힘듭니다.<br>
+                    <ins><b>그래서 우리는 영문 리뷰 요약을 통해 핵심 정보만 도출, 사람들이 보다 쉽게 해외 웹사이트에서 쇼핑을 즐길 수 있게 할 것입니다.</b></ins><br>
+                    <br>
+                    <br>
+                    <ins><b>BeViBig의 텍스트 추출은 다음을 통해 임무를 완수합니다.</ins></b>
+                    <br>
+                    <br>
+                    • 10개의 전처리 과정<br>
+                    • 추상 요약 기법을 사용하여 요약을 생성<br>
+                    • 단어 빈도수에 따라 가중치를 두어서 요약본을 생성<br>
+                    • 모델 사용(seq2seq + Attention)
                 
             </p>
             </div>
